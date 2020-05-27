@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="333.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.StatsPopUpController">
+   <children>
+      <AnchorPane prefHeight="467.0" prefWidth="333.0">
+         <children>
+            <TableView fx:id="tag_table" layoutX="42.0" layoutY="109.0" prefHeight="300.0" prefWidth="250.0">
+              <columns>
+                <TableColumn fx:id="tagCol" maxWidth="248.0" minWidth="-1.0" prefWidth="248.0" text="TAG" />
+              </columns>
+            </TableView>
+            <Label fx:id="book_lab" layoutX="45.0" layoutY="32.0" text="Book Name">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="wish_lab" layoutX="45.0" layoutY="58.0" text="cointained in: x wishlist">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="tags_lab" layoutX="42.0" layoutY="82.0" text="# of tags: x">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Button id="back_but" fx:id="back_but" layoutX="251.0" layoutY="55.0" mnemonicParsing="false" onAction="#backTo" text="Back" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

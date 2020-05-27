@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="993.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.CatalogueController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="683.0" prefWidth="995.0" style="-fx-background-color: #eeeeff;">
+         <children>
+            <Button fx:id="logout_but" layoutX="38.0" layoutY="78.0" mnemonicParsing="false" onAction="#logout" prefHeight="26.0" prefWidth="74.0" text="Logout" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="welcome_msg" layoutX="38.0" layoutY="56.0" text="Welcome, &lt;username&gt;" />
+            <TableView fx:id="book_table" layoutX="41.0" layoutY="155.0" prefHeight="419.0" prefWidth="913.0">
+               <columns>
+                  <TableColumn fx:id="idCol" minWidth="0.0" prefWidth="57.0" text="ID" />
+                  <TableColumn fx:id="titleCol" minWidth="0.0" prefWidth="473.0" text="Title" />
+                  <TableColumn fx:id="authorCol" prefWidth="285.66668701171875" text="Author" />
+                  <TableColumn fx:id="ratingCol" minWidth="0.0" prefWidth="96.33331298828125" text="Avg_Rating" />
+               </columns>
+            </TableView>
+            <Button fx:id="next_but" layoutX="799.0" layoutY="124.0" mnemonicParsing="false" onAction="#nextPage" text="Next" />
+            <Button fx:id="previous_but" layoutX="716.0" layoutY="124.0" mnemonicParsing="false" onAction="#previousPage" text="Previous" />
+            <Label fx:id="page_count" disable="true" layoutX="861.0" layoutY="129.0" text="Page x of y" />
+            <Button fx:id="back" layoutX="120.0" layoutY="78.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="107.0" text="Back to Menu" />
+            <Label layoutX="468.0" layoutY="40.0" text="Catalogue">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Button fx:id="mark_but" layoutX="54.0" layoutY="599.0" mnemonicParsing="false" onAction="#markAsRead" text="Mark as Read" />
+            <Button fx:id="add_but" layoutX="194.0" layoutY="599.0" mnemonicParsing="false" onAction="#addToWishList" text="Add to Wish List" />
+            <Button fx:id="view_but" layoutX="716.0" layoutY="78.0" mnemonicParsing="false" onAction="#viewRated" text="View Rated" />
+            <TextField fx:id="tag_field" layoutX="598.0" layoutY="599.0" promptText="insert metadata tag" />
+            <Button fx:id="tag_but" layoutX="793.0" layoutY="599.0" mnemonicParsing="false" onAction="#addTag" text="Add Tag" />
+            <Button fx:id="stats_but" layoutX="194.0" layoutY="599.0" mnemonicParsing="false" onAction="#viewStatistics" text="View Statistics" visible="false" />
+            <Button fx:id="remove_but" layoutX="54.0" layoutY="599.0" mnemonicParsing="false" onAction="#removeBook" text="Remove Selected" visible="false" />
+
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

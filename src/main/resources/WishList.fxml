@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="993.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.WishListController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="683.0" prefWidth="995.0" style="-fx-background-color: #eeeeff;">
+         <children>
+            <Button fx:id="logout_but" layoutX="38.0" layoutY="78.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="100.0" text="Logout" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="welcome_msg" layoutX="38.0" layoutY="56.0" text="Welcome, &lt;username&gt;" />
+            <TableView fx:id="book_table" layoutX="41.0" layoutY="155.0" prefHeight="419.0" prefWidth="913.0">
+               <columns>
+                  <TableColumn fx:id="idCol" prefWidth="50.0" text="ID" />
+                  <TableColumn fx:id="titleCol" minWidth="0.0" prefWidth="567.0" text="Title" />
+                  <TableColumn fx:id="authorCol" prefWidth="201.0" text="Author" />
+                  <TableColumn fx:id="ratingCol" minWidth="0.0" prefWidth="94.0" text="AVG Rating" />
+               </columns>
+            </TableView>
+            <Button fx:id="next_but" layoutX="799.0" layoutY="124.0" mnemonicParsing="false" onAction="#nextPage" text="Next" />
+            <Button fx:id="previous_but" layoutX="716.0" layoutY="124.0" mnemonicParsing="false" onAction="#previousPage" text="Previous" />
+            <Label fx:id="page_count" disable="true" layoutX="861.0" layoutY="129.0" text="Page x of y" />
+            <Button fx:id="back" layoutX="38.0" layoutY="111.0" mnemonicParsing="false" onAction="#back" text="Back to Menu" />
+            <Label layoutX="468.0" layoutY="40.0" text="Wish List" />
+            <Button fx:id="remove_but" layoutX="54.0" layoutY="599.0" mnemonicParsing="false" onAction="#removeSelected" text="Remove Selected" />
+            <Button fx:id="mark_but" layoutX="215.0" layoutY="599.0" mnemonicParsing="false" onAction="#markRead" text="Mark as Read" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

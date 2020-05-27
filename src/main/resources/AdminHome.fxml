@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="364.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.AdminHomeController">
+   <children>
+      <AnchorPane prefHeight="364.0" prefWidth="270.0">
+         <children>
+            <Button fx:id="catalogue_but" layoutX="93.0" layoutY="174.0" mnemonicParsing="false" onAction="#cataloguePage" text="Catalogue" />
+            <Button fx:id="logout_but" layoutX="105.0" layoutY="312.0" mnemonicParsing="false" onAction="#logout" text="Logout" textFill="RED" />
+            <Button fx:id="add_but" layoutX="95.0" layoutY="124.0" mnemonicParsing="false" onAction="#addBook" text="Add Book" />
+         </children></AnchorPane>
+   </children>
+</VBox>
